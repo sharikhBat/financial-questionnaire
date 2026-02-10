@@ -23,7 +23,7 @@ export const questions: Question[] = [
   {
     id: "goal",
     title: "What's your #1 financial goal?",
-    subtitle: "Pick the one that matters most right now",
+    subtitle: "Pick one",
     type: "single",
     options: [
       { value: "save", label: "Build an emergency fund", icon: "🛟" },
@@ -36,7 +36,7 @@ export const questions: Question[] = [
   {
     id: "income",
     title: "What's your monthly income?",
-    subtitle: "Before taxes — a rough estimate is fine",
+    subtitle: "Before taxes — ballpark is fine",
     type: "single",
     options: [
       { value: "under_3k", label: "Under $3,000", icon: "💵" },
@@ -62,7 +62,7 @@ export const questions: Question[] = [
   {
     id: "challenge",
     title: "What's your biggest money struggle?",
-    subtitle: "Be honest — this helps us personalize your plan",
+    subtitle: "Be honest — better answers, better plan",
     type: "single",
     options: [
       { value: "spending", label: "I spend more than I should", icon: "🛒" },
@@ -75,18 +75,18 @@ export const questions: Question[] = [
   {
     id: "risk",
     title: "How do you feel about risk?",
-    subtitle: "When it comes to investing your money",
+    subtitle: "For investing your money",
     type: "single",
     options: [
       { value: "conservative", label: "Keep it safe — I hate losing money", icon: "🛡️" },
-      { value: "moderate", label: "Some risk is okay for better returns", icon: "⚖️" },
+      { value: "moderate", label: "I'll take some risk for better returns", icon: "⚖️" },
       { value: "aggressive", label: "I'm fine with big swings for big gains", icon: "🎢" },
     ],
   },
   {
     id: "timeline",
     title: "When do you need results?",
-    subtitle: "Your time horizon shapes the strategy",
+    subtitle: "This shapes your whole strategy",
     type: "single",
     options: [
       { value: "asap", label: "Within 6 months", icon: "⚡" },

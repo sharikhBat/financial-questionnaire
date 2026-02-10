@@ -37,11 +37,10 @@ export default function CheckoutPage() {
         <div className="animate-fade-in text-center space-y-3">
           <div className="text-5xl">🎯</div>
           <h1 className="text-2xl font-bold tracking-tight">
-            Your plan is ready to generate
+            Your plan is ready
           </h1>
           <p className="text-muted text-base leading-relaxed">
-            We&apos;ll use AI to create a personalized financial blueprint based
-            on your answers.
+            AI turns your answers into a step-by-step money plan.
           </p>
         </div>
 
@@ -51,14 +50,14 @@ export default function CheckoutPage() {
         >
           <div className="flex justify-between items-center">
             <span className="text-foreground font-medium">
-              Personal Financial Plan
+              Your Money Plan
             </span>
             <span className="text-foreground font-bold text-lg">$9</span>
           </div>
           <div className="border-t border-border pt-3 space-y-2 text-sm text-muted">
             <div className="flex items-center gap-2">
               <span className="text-accent-strong">✓</span>
-              Personalized action plan
+              Step-by-step action plan
             </div>
             <div className="flex items-center gap-2">
               <span className="text-accent-strong">✓</span>
@@ -105,14 +104,14 @@ export default function CheckoutPage() {
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
                   />
                 </svg>
-                Generating your plan...
+                Building your plan...
               </>
             ) : (
-              "Pay $9 & Generate Plan"
+              "Get My Plan — $9"
             )}
           </button>
           <p className="text-center text-xs text-muted">
-            Demo mode — no real charge. Stripe integration ready.
+            Demo mode — no charge
           </p>
         </div>
       </div>

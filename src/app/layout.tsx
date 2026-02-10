@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FinPlan AI — Your Personal Financial Blueprint",
+  title: "FinPlan AI — Your Money Plan in Minutes",
   description:
-    "Answer 6 simple questions. Get a personalized financial plan powered by AI.",
+    "Answer 6 questions. Get a personalized money plan built by AI.",
 };
 
 export default function RootLayout({

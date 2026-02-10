@@ -162,7 +162,7 @@ export default function ReportPage() {
             href="/"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            ← Start over
+            ← Start fresh
           </Link>
         </div>
       </section>

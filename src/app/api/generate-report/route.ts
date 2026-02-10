@@ -57,15 +57,15 @@ function generateMockReport(answers: Answers): object {
 
   return {
     headline: "You're closer than you think",
-    summary: `Based on your answers, your top priority is ${goal}. The good news? With a structured approach and consistent habits, you can make meaningful progress within 90 days. This plan is designed specifically for your income level and risk comfort.`,
+    summary: `Your top priority: ${goal}. Good news — with the right moves, you'll see real progress in 90 days. This plan fits your income and risk comfort.`,
     sections: [
       {
         title: "Immediate Actions",
         icon: "⚡",
         items: [
-          "Open a separate high-yield savings account (look for 4.5%+ APY)",
-          "Set up automatic transfers for the day after payday",
-          "Track every expense for the next 7 days using a simple notes app",
+          "Open a high-yield savings account (4.5%+ APY)",
+          "Set up automatic transfers the day after payday",
+          "Track every expense for 7 days — use your phone's notes app",
         ],
       },
       {
@@ -73,7 +73,7 @@ function generateMockReport(answers: Answers): object {
         icon: "📋",
         items: [
           "Follow the 50/30/20 rule: 50% needs, 30% wants, 20% savings/debt",
-          "Identify your top 3 non-essential subscriptions and cancel at least one",
+          "Find 3 subscriptions you barely use. Cancel one.",
           "Use the 24-hour rule: wait a day before any purchase over $50",
         ],
       },
@@ -88,20 +88,20 @@ function generateMockReport(answers: Answers): object {
             ? [
                 "List all debts by interest rate — attack the highest rate first (avalanche method)",
                 "Call each creditor and ask for a rate reduction — the worst they can say is no",
-                "Redirect any 'found money' (tax refunds, bonuses) directly to debt principal",
+                "Throw any windfall (tax refunds, bonuses) straight at your debt",
               ]
             : [
-                "Build 3 months of expenses in savings before investing",
+                "Save 3 months of expenses before you invest a dollar",
                 `Start with a ${answers.risk === "conservative" ? "target-date index fund for hands-off growth" : answers.risk === "aggressive" ? "diversified portfolio with 80% stocks, 20% bonds" : "balanced 60/40 stock-to-bond index fund"}`,
-                "Automate investments with weekly micro-deposits to reduce timing risk",
+                "Automate weekly micro-deposits — removes the guesswork",
               ],
       },
       {
         title: "Growth Strategy",
         icon: "🚀",
         items: [
-          "Review and negotiate recurring bills (insurance, phone, internet) — save $50-200/mo",
-          "Explore one additional income stream aligned with your skills",
+          "Negotiate your bills (insurance, phone, internet) — most people save $50-200/mo",
+          "Pick one side income stream that fits your skills",
           "Schedule a monthly 30-minute money review — consistency beats intensity",
         ],
       },
@@ -109,9 +109,9 @@ function generateMockReport(answers: Answers): object {
     milestones: [
       {
         timeframe: "Month 1",
-        goal: "Foundation set",
+        goal: "Foundation laid",
         actions: [
-          "Emergency fund started with first deposit",
+          "First emergency fund deposit made",
           "Budget tracked for 30 days straight",
         ],
       },
@@ -120,20 +120,20 @@ function generateMockReport(answers: Answers): object {
         goal: "Momentum building",
         actions: [
           `${answers.goal === "debt" ? "Smallest debt eliminated" : "One month of expenses saved"}`,
-          "Spending reduced by 15% vs. month 1",
+          "Spending down 15% from month 1",
         ],
       },
       {
         timeframe: "Month 6",
-        goal: "Real progress visible",
+        goal: "Visible results",
         actions: [
           `${answers.goal === "invest" ? "Investment portfolio established and growing" : answers.goal === "debt" ? "50% of high-interest debt cleared" : "3 months emergency fund complete"}`,
-          "Financial confidence measurably improved",
+          "You feel in control of your money",
         ],
       },
     ],
     bottomLine:
-      "Small, consistent actions beat grand plans every time. Start today — future you will be grateful.",
+      "Small moves beat big plans. Start today — future you will thank you.",
   };
 }
 

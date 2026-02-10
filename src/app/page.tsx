@@ -10,8 +10,7 @@ export default function Home() {
             Your AI Financial Blueprint
           </h1>
           <p className="text-muted text-lg leading-relaxed">
-            Answer 6 quick questions. Get a personalized money plan built by AI
-            in under 2 minutes.
+            6 questions. One personalized money plan. Under 2 minutes.
           </p>
         </div>
 
@@ -25,7 +24,7 @@ export default function Home() {
           >
             Get My Plan
           </Link>
-          <p className="text-sm text-muted">Takes about 60 seconds</p>
+          <p className="text-sm text-muted">Just 60 seconds</p>
         </div>
 
         <div
